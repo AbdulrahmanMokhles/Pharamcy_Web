@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <hr><br>
+    <div class="container">
+        <h1 class="alert alert-primary text-center text-primary">المتجر</h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            @for (p of Products; track p.id) {
+            <div class="card" style="width: 18rem; padding: 10px 0px; margin: 10px; width:400px;">
+                <div class="card-body">
+                    <a routerLink="/details/{{p.id}}" style="text-decoration: none; color: black;">
+                        <img style="width: 150px; " class="card-img-top" src="{{p.image}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{p.name}}</h5>
+                            <p class="card-text">{{p.description}}</p>
+                            <p style="font-size: 25px; color: black; padding: 5px; text-align: center; border-radius: 20px; background-color: #51eaea;"
+                                class="card-text">
+                                <strong>{{p.price}}</strong>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div id="buttons">
+                    <ul>
+                        <li id="cartbtn">
+                            <a id="cartbtn" href="#" class=" btn btn-success">اضافة للعربة</a>
+                        </li>
+                        <li id="favbtn">
+                            <a id="favbtn" href="#" class=" btn btn-danger"><i class="fa fa-heart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</body>

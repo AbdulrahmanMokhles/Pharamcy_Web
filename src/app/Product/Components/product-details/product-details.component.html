@@ -1,0 +1,65 @@
+<body>
+    <div class="site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mr-auto">
+                    <div class="border text-center">
+                        <img src="{{product.image}}" alt="Image" class="img-fluid p-5">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-black">{{product.title}}</h2>
+                    <p>{{product.description}} </p>
+
+                    <p><strong class="text-primary h4">{{product.price}}</strong></p>
+
+                    <div class="mb-5">
+                        <div class="mb-3" style="max-width: 220px;">
+                            <div>
+                                <button class="btn btn-outline-primary js-btn-minus" type="button">-</button>
+                            </div>
+                            <input type="text" class="form-control text-center" value="1" placeholder=""
+                                aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <div>
+                                <button class="btn btn-outline-primary js-btn-plus" type="button">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><a href="cart.html" class="btn btn-sm height-auto px-4 py-3 btn-outline-primary">Add To Cart</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="contentTab">
+        <div class="title text-center">{{product.title}}</div>
+        <br>
+        <div class="detail">
+            <div class="image">
+                <img src="{{product.image}}">
+            </div>
+            <div class="content">
+                <h1 class="name">{{product.title}}</h1>
+                <div class="price">{{product.price}}$</div>
+                <div class="buttons">
+                    <button>Check Out</button>
+                    <button class="addCart" data-id="8">اضافة الي العربة
+                        <span>
+                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 18 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="description">{{product.description}}</div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,24 @@
+#buttons {
+    width: 82%;
+    margin: 15px auto 0 auto;
+    /* padding: 2%; */
+    /* border-radius: 12px; */
+    /* border: 1px solid #e0e0e0; */
+}
+
+#buttons li {
+    display: inline;
+
+}
+
+#cartbtn {
+    width: 75%;
+    /* padding: 0px 30px; */
+
+}
+
+#favbtn {
+    /* padding: 3px; */
+    /* width: 25%; */
+    margin-left: 15px;
+}
