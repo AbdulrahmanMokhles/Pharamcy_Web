@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div class="form-group col-sm-3">
         <label>اسم المنتج</label>
         <input #title type="text" class="form-control" placeholder="اكتب اسم المنتج">
@@ -21,6 +21,37 @@
     <br>
     <button (click)="Add(title.value,price.value,description.value,quantity.value)"
         class="btn btn-success">اضافة</button>
+</div> -->
+
+<div class="container">
+    <form formGroup="">
+        <!-- <div class="container"> -->
+        <div class="form-group col-sm-3">
+            <label>اسم المنتج</label>
+            <input type="text" class="form-control" placeholder="اكتب اسم المنتج">
+        </div>
+        <br>
+        <div class="form-group col-sm-3">
+            <label for="exampleInputPassword1">سعر المنتج</label>
+            <input type="number" class="form-control" placeholder="اكتب السعر">
+        </div>
+        <br>
+        <div class="form-group col-sm-3">
+            <label for="exampleInputPassword1">كمية المنتج</label>
+            <input type="number" class="form-control" placeholder="اكتب السعر">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>وصف المنتج</label>
+            <input type="text" class="form-control" placeholder="اكتب الوصف">
+        </div>
+        <br>
+        <!-- <button (click)="Add()" class="btn btn-success">اضافة</button> -->
+        <input type="submit" (click)="Add()" class="btn btn-success" value="اضافة">
+        <!-- </div> -->
+
+    </form>
+
 </div>
 
 
