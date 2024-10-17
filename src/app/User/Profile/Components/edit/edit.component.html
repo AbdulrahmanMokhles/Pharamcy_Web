@@ -1,0 +1,51 @@
+<section class="section editProfile-page" style="direction: rtl;">
+    <div class="section" style="padding: 3rem;">
+        <div class="section-edit">
+            <h2>معلومات المستخدم</h2>
+        </div>
+        <form [formGroup]="userForm" (ngSubmit)="submitForm()">
+            <div class="form-group">
+                <label for="userName">الاسم:</label>
+                <input type="text" formControlName="name" placeholder="الاسم">
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" formControlName="email" placeholder="البريد الإلكتروني">
+            </div>
+            <div class="form-group">
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" formControlName="phone" placeholder="رقم الهاتف">
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور :</label>
+                <input type="{{ showPassword ? 'text' : 'password' }}" formControlName="password"
+                    placeholder="كلمة المرور الحالية">
+                <span (click)="togglePasswordVisibility()"
+                    style="position: absolute; transform: translate(30px, 11px);">
+                    <i class="fa fa-eye" aria-hidden="false"></i>
+                </span>
+            </div>
+            <!-- <div class="form-group">
+                <label for="password">كلمة المرور الجديدة:</label>
+                <input type="{{ showNewPassword ? 'text' : 'password' }}" formControlName="newPassword" placeholder="كلمة المرور الجديدة">
+                <span (click)="toggleNewPasswordVisibility()" style="position: absolute; transform: translate(30px, 11px);">
+                    <i class="fa fa-eye" [class.fa-eye-slash]="showNewPassword" aria-hidden="false"></i>
+                </span>
+            </div>-->
+            <!-- <div class="form-group">
+                <label for="confirmPassword">تأكيد كلمة المرور :</label>
+                <input type="{{ showConfirmNewPassword ? 'text' : 'password' }}" formControlName="confirmPassword" placeholder="تأكيد كلمة المرور الجديدة">
+                <span (click)="toggleConfirmNewPasswordVisibility()" style="position: absolute; transform: translate(30px, 11px);">
+                    <i class="fa fa-eye" [class.fa-eye-slash]="showConfirmNewPassword" aria-hidden="false"></i>
+                </span>
+            </div>  -->
+            <div class="form-group">
+                <label for="address">العنوان:</label>
+                <input type="text" formControlName="address" placeholder="العنوان">
+            </div>
+            <button type="submit" class="btn btn-info"
+                style="margin-left: 10px; width: 70px; padding: 4px;">حفظ</button>
+            <button type="button" class="btn btn-secondary" (click)="cancelEdit()">إلغاء</button>
+        </form>
+    </div>
+</section>

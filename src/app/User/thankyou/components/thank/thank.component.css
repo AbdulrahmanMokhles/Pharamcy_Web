@@ -1,0 +1,26 @@
+h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #000;
+   
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: gray;
+    font-weight: 600;
+}
+.site-section{
+    padding: 6rem 10rem 5rem;
+}
+@media(max-width:780px){
+    .site-section{
+        padding: 6rem 0rem 5rem;
+    }
+}
+@media(max-width:577px){
+    .site-section{
+        padding: 2rem 0rem 0rem;
+    } 
+}

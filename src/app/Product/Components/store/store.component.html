@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
     <hr><br>
@@ -37,4 +37,133 @@
             }
         </div>
     </div>
+</body>
+
+ -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <br>
+    <!-- <div class="container text-center">
+        <div>
+            <div class="md-form active-pink active-green-2 mb-3 mt-0">
+                <input #searchvalue class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+            <input style="padding: 10px 150px;" type="submit" class="btn btn-outline-success" value="بحث"
+                (click)="onSearch(searchvalue.value)">
+        </div>
+    </div> -->
+
+    <div style="" class="container ">
+        <div>
+            <div style="direction: rtl;display: flex;" class="md-form active-pink active-green-2 mb-3 mt-0">
+                <input style="width: 30%;" #searchvalue class="form-control" type="text" placeholder="اسم المنتج"
+                    aria-label="Search">
+                <a class="btn btn-outline" (click)="onSearch(searchvalue.value)"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" fill="info" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg></a>
+            </div>
+            <!-- <input style="padding: 10px px;" type="submit" class="btn btn-info" value="بحث"
+                (click)="onSearch(searchvalue.value)"> -->
+        </div>
+    </div>
+    <hr>
+    @if (filteredProducts!="") {
+    <div class="container" style="padding: 40px;">
+        <div class="row" style="justify-content: center;">
+            <div *ngFor="let p of filteredProducts" class="card" style="width: 20rem; padding: 10px 0px; margin: 10px;">
+                <div class="card-body">
+                    <a routerLink="/details/{{p.id}}" style="text-decoration: none; color: black;">
+                        <div class="overlay">
+                            <img style="width: 50%;" class="card-img-top" src="{{p.image}}" alt="Card image cap">
+                            <div id="buttons" class="icons">
+                                <ul>
+                                    <li id="cartbtn">
+                                        <a routerLink="/cart2" id="cartbtn" class="btn btn-info"><i
+                                                (click)="AddtoCart(p.id)" class="fa fa-shopping-cart"></i></a>
+                                        <span class="tooltip">إضافة للعربة</span>
+                                    </li>
+                                    <!-- <li id="favbtn">
+                                            <a routerLink="/wishlist" id="favbtn" class="btn btn-info"><i
+                                                    class="fa fa-heart"></i></a>
+                                            <span class="tooltip"> إضافة للمفضلة</span>
+                                        </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- </a> -->
+                </div>
+                <a style="text-decoration: none; color: black;" routerLink="/details/{{p.id}}">
+                    <div class="card-footer">
+                        <p class="card-title">{{p.name}}</p>
+                        <!-- <p class="card-text">{{p.description}}</p> -->
+                        <p style="margin-top: 10px; font-size: 20px; color: #666;" class="card-text">{{p.price}} جنيه
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    }
+
+    @else {
+
+    <div class="container" style="padding: 40px;">
+        <div class="row" style="justify-content: center;">
+            <div *ngFor="let p of currentPageProducts" class="card"
+                style="width: 20rem; padding: 10px 0px; margin: 10px;">
+                <div class="card-body">
+                    <a routerLink="/details/{{p.id}}" style="text-decoration: none; color: black;">
+                        <div class="overlay">
+                            <img style="width: 50%;" class="card-img-top" src="{{p.image}}" alt="Card image cap">
+                            <div id="buttons" class="icons">
+                                <ul>
+                                    <li id="cartbtn">
+                                        <a routerLink="/details/{{p.id}}" id="cartbtn" class="btn btn-info"><i
+                                                (click)="AddtoCart(p.id)" class="fa fa-shopping-cart"></i></a>
+                                        <span class="tooltip">إضافة للعربة</span>
+                                    </li>
+                                    <!-- <li id="favbtn">
+                                            <a routerLink="/wishlist" id="favbtn" class="btn btn-info"><i
+                                                    class="fa fa-heart"></i></a>
+                                            <span class="tooltip"> إضافة للمفضلة</span>
+                                        </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- </a> -->
+                </div>
+                <a style="text-decoration: none; color: black;" routerLink="/details/{{p.id}}">
+                    <div class="card-footer">
+                        <p class="card-title">{{p.name}}</p>
+                        <!-- <p class="card-text">{{p.description}}</p> -->
+                        <p style="margin-top: 10px; font-size: 20px; color: #666;" class="card-text">{{p.price}} جنيه
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="pagination-container">
+                <div class="pagination">
+                    <button class="btn " [disabled]="currentPage === 1" (click)="prevPage()">
+                        <i class="fa fa-angle-double-left" style="font-size:36px"></i>
+                    </button>
+                    <span>{{ currentPage }}</span>
+                    <button class="btn " [disabled]="currentPage === totalPages" (click)="nextPage()">
+                        <i class="fa fa-angle-double-right" style="font-size:36px"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    }
 </body>

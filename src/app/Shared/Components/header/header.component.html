@@ -1,4 +1,4 @@
-<div class="container" style="background-color: rgb(255, 255, 255);  padding: 10px;">
+<!-- <div class="container" style="background-color: rgb(255, 255, 255);  padding: 10px;">
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div>
             <a class="navbar-brand" routerLink="#">صيدلية حجازي</a>
@@ -22,4 +22,82 @@
             </div>
         </div>
     </nav>
-</div>
+</div> -->
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="direction: rtl;">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" routerLink="/home" style="z-index: 1001;">
+            <h2 class="m-2">صيدلية حجازي</h2>
+        </a>
+        <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-label="Toggle navigation"
+            style="z-index: 1001;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="fixed-content collapse navbar-collapse" [ngClass]="{'show': isNavbarVisible  }"
+            id="navbarSupportedContent" style="margin-left: 4rem;">
+            @if (userid==8) {
+            <ul class=" navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item m-2">
+                    <a routerLinkActive="active" routerLink="/products" class="nav-link ">المنتجات</a>
+                </li>
+                <li class="nav-item m-2">
+                    <a routerLinkActive="active" routerLink="/orders" class="nav-link ">الطلبات</a>
+                </li>
+            </ul>
+            }
+            @if (userid!=8) {
+            <ul style="margin-left:-30rem; position: relative;" class=" navbar-nav me-auto mb-4 mb-lg-0 ">
+                <li class="nav-item m-2">
+                    <a routerLinkActive="active" routerLink="/home" class="nav-link" aria-current="page">الصفحة
+                        الرئيسية</a>
+                </li>
+                <li class="nav-item m-2">
+                    <a routerLinkActive="active" routerLink="/store" class="nav-link">المتجر</a>
+                </li>
+
+                <li class="nav-item m-2">
+                    <a routerLinkActive="active" routerLink="/about" class="nav-link ">من نحن</a>
+                </li>
+                <li class="nav-item m-2">
+                    <a routerLinkActive="active" routerLink="/contact" class="nav-link ">إتصل بنا</a>
+                </li>
+
+            </ul>
+            <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a routerLinkActive="active" routerLink="/Cart2" class="icons-btn d-inline-block bag m-2 nav-item">
+                        <span class="icon-shopping-bag"><i style="font-size: 22px;"
+                                class="fa fa-shopping-cart"></i></span>
+                        <!-- <span class="number">0</span> -->
+                    </a>
+                </li>
+
+                <a routerLinkActive="active" routerLink="/profile" class="icons-btn d-inline-block bag m-2">
+                    <span class="icon-login"><i style="font-size: 22px;" class="fa fa-user"></i></span>
+                </a>
+
+                @if (userid==0) {
+                <a routerLinkActive="active" routerLink="/Login" class="icons-btn d-inline-block bag m-2"
+                    style="text-decoration: none;">
+                    <span class="login text" style="font-size: 17px;">تسجيل الدخول</span>
+                </a>
+                }
+
+            </ul>
+            }
+            @if(userid!=0 || userid==8) {
+            <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+                <a (click)="logut()" routerLinkActive="active" routerLink="/" class="icons-btn d-inline-block bag m-2"
+                    style="text-decoration: none;">
+                    <span class="icon-login" style="font-size: 17px;">تسجيل الخروج</span>
+                </a>
+            </ul>
+            }
+
+        </div>
+
+    </div>
+</nav>

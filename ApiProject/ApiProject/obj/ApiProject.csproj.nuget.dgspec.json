@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\ApiProject.csproj": {}
+  },
+  "projects": {
+    "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\ApiProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\ApiProject.csproj",
+        "projectName": "ApiProject",
+        "projectPath": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\ApiProject.csproj",
+        "packagesPath": "C:\\Users\\Abdo Mokhles\\.nuget\\packages\\",
+        "outputPath": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Abdo Mokhles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.3.21202.5\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

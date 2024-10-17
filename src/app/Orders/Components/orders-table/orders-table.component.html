@@ -1,0 +1,32 @@
+<div class="container">
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>حاله الطلب</th>
+                <th>وقت الطلب</th>
+                <th>اجمالي المبلغ</th>
+                <th>اسم العميل</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+           <!--  @for(o of orders ;track o.id){ -->
+            <tr *ngFor="let o of orders; let i = index; track: id">
+                <td>
+                    <button type="button" class="btn btn-danger me-3 btn-sm" (click)="deleteOrder(o.id)">حذف الطلب</button>
+                    <button type="button" class="btn btn-success me-3 btn-sm" (click)="updateStatus(o.id,i)">تم
+                        التوصيل</button>
+                    <button type="button" class="btn btn-info btn-sm" (click)="Detalis(o.id)">تفاصيل الطلب</button>
+                </td>
+                <td *ngIf="o.orderStatus else elseBlock">تم التوصيل</td>
+                <ng-template #elseBlock>
+                    <td>لم يصل </td>
+                </ng-template>
+                <td>{{o.orderTime}}</td>
+                <td>{{o.totalBalance}}</td>
+                <td>{{o.u}}</td>
+            </tr>
+            <!-- } -->
+        </tbody>
+    </table>
+</div>

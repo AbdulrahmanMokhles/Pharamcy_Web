@@ -1,0 +1,26 @@
+<!-- alert.component.html
+<div class="alert" [ngClass]="{ 'alert-success': type === 'success', 'alert-danger': type === 'error' }">
+    {{ message }}
+    <button class="close" (click)="closeAlert()">×</button>
+  </div>
+   -->
+<!-- <p>hi</p> -->
+<div class="mat-mdc-dialog-surface mdc-dialog__surface" style="
+       width: 250px;
+    height: 204px;
+    position: fixed !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 9999999 !important;
+    bottom: 50% !important;
+    left: 50% !important;
+    background-color: rgb(206, 212, 191);
+  ">
+    <div mat-dialog-content style="margin: auto; text-align: center;">
+        <h1>{{ data.message }}</h1>
+    </div>
+    <div mat-dialog-actions style="margin: auto; text-align: center;">
+        <button mat-button (click)="dialogRef.close()" class="btn btn-primary">
+            اغلاق
+        </button>
+    </div>
+</div>

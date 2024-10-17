@@ -1,0 +1,52 @@
+.site-footer {
+    background-color: #f8f9fa;
+    padding: 50px 0 0;
+}
+
+.site-footer .block-7 h3.footer-heading {
+    font-size: 20px;
+    color: #333;
+}
+
+.site-footer .block-7 p {
+    font-size: 16px;
+    color: #777;
+}
+
+.site-footer .block-5 h3.footer-heading {
+    font-size: 20px;
+    color: #333;
+}
+
+.site-footer .block-5 ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.site-footer .block-5 ul li {
+    font-size: 16px;
+    color: #777;
+}
+
+.site-footer .block-5 ul li.address::before {
+    content: "\f015";
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+
+.site-footer .block-5 ul li.phone::before {
+    content: "\f095";
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+
+.site-footer .block-5 ul li.email::before {
+    content: "\f0e0";
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './Shared/Components/header/header.component';
-import { TesttComponent } from './testt/testt.component';
+import { FooterComponent } from './Shared/Components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { TesttComponent } from './testt/testt.component';
   imports: [
     RouterOutlet,
     HeaderComponent,
-    TesttComponent
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

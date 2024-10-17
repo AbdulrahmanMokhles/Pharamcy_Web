@@ -1,0 +1,73 @@
+<div style="background-color: white;" class="container">
+    <div class="img">
+        <img src="assets/img/pharm5.jpg" alt="" />
+    </div>
+
+
+    <div style="margin: auto 0;" class="login-container">
+        <form (ngSubmit)="login()" [formGroup]="myform" #loginForm="ngForm">
+            <img src="assets/img/person.png" class="avtar" alt="" />
+            <h2>☺مرحبا</h2>
+            <div class="input-div one">
+                <div class="i">
+
+                    <img src="assets/img/wave3.jpg" alt="" class="wave" />
+                    <i class="fas fa-user"></i>
+                </div>
+                <div>
+                    <!-- <h5>الايميل</h5> -->
+                    <input type="text" [(ngModel)]="email" name="email" class="input" placeholder="الايميل"
+                        formControlName="email" required dir="rtl">
+                    <p class="error-message"
+                        *ngIf="myform.controls['email'].invalid && myform.controls['email'].touched" dir="rtl">
+                        الايميل مطلوب
+                    </p>
+                </div>
+            </div>
+            <div class="input-div two">
+                <div class="i">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div>
+                    <input [type]="showPassword ? 'text' : 'password'" [(ngModel)]="password" name="password"
+                        class="input" placeholder="كلمه السر" formControlName="password" required dir="rtl">
+                    <p class="error-message"
+                        *ngIf="myform.controls['password'].invalid && myform.controls['password'].touched" dir="rtl">
+                        كلمه السر مطلوبه
+                    </p>
+                </div>
+            </div>
+            <a href="#" dir="rtl" style="font-size: 20px;">نسيت كلمه السر</a>
+            <a routerLink="/SignUp" style="font-size: 20px;">ليس لديك حساب ؟اضغط هنا لتسجيل </a>
+            <p>
+            <p>
+                <a style="font-size: 20px;">
+                    <p style="color:#51eaea; ;">اظهار كلمه السر
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-eye" viewBox="0 0 16 16" (click)="togglePasswordVisibility()"
+                            style="color:#51eaea; ;" type="checkbox">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                        </svg>
+
+
+                    </p>
+
+                </a>
+            </p>
+
+            <!-- <a>  <p style="color:#51eaea; ;">اظهار كلمه السر </p> <input style="color:#51eaea; ;" type="checkbox" (change)="showHidePassword(passwordField)" /></a> -->
+
+            <button type="submit" class="btn" (click)="login()" [disabled]="!myform.valid">دخول</button>
+            <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+            @if (isLoading) {
+            <div class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            }
+        </form>
+    </div>
+</div>

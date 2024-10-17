@@ -1,4 +1,4 @@
-<body>
+<!-- <body>
     <div class="site-section">
         <div class="container">
             <div class="row">
@@ -65,3 +65,46 @@
         </div>
     </div>
 </body>
+
+ -->
+
+<div style="direction: rtl;" class="site-section">
+    <div class="container">
+        <div class="row">
+            <div style="margin-left: 30px;" class="col-md-5 mr-auto">
+                <div class="border text-center">
+                    <img src="{{product.image}}" alt="Image" class="img-fluid p-5">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p style="max-inline-size: 600px;
+                inline-size: max-content; line-height: 36px;font-weight: bold; font-size: 2.2rem;" class="text-black">
+                    {{product.name}}
+                </p>
+                <p style="margin-top: 30px; max-inline-size: 600px;
+                inline-size: max-content; line-height: 36px;font-size: 20px;">{{product.description}}</p>
+                <div style="margin-top: 30px; display: flex;">
+                    <p><strong class="" style="font-size: 2rem;">{{product.price}} جنيه</strong></p>
+                    <!-- <div class="mb-5">
+                        <div class="input-group mb-3" style="max-width: 220px;">
+                            <div>
+                                <button class="btn btn-outline-info " type="button">&minus;</button>
+                            </div>
+                            <input type="text" class="form-control text-center" value="1" placeholder=""
+                                aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <div>
+                                <button class="btn btn-outline-info " type="button">&plus;</button>
+                            </div>
+                        </div>
+    
+                    </div> -->
+                    <p><a routerLink="/cart" class="buy-now btn btn-sm height-auto px-4 py-3 btn-info"
+                            (click)="AddtoCart(product.id)"
+                            style="margin-right: 15px;  border-radius: 15px;font-size: 18px;">إضافة
+                            للعربة</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

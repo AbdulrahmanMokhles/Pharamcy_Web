@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|d:\\intensive camp\\final project\\pharmacy\\apiproject\\apiproject\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|solutionrelative:apiproject\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|d:\\intensive camp\\final project\\pharmacy\\apiproject\\apiproject\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|solutionrelative:apiproject\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|d:\\intensive camp\\final project\\pharmacy\\apiproject\\apiproject\\dto\\orderwithuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|solutionrelative:apiproject\\dto\\orderwithuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|d:\\intensive camp\\final project\\pharmacy\\apiproject\\apiproject\\dto\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|solutionrelative:apiproject\\dto\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|d:\\intensive camp\\final project\\pharmacy\\apiproject\\apiproject\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|solutionrelative:apiproject\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|d:\\intensive camp\\final project\\pharmacy\\apiproject\\apiproject\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|solutionrelative:apiproject\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|d:\\intensive camp\\final project\\pharmacy\\apiproject\\apiproject\\models\\pharmdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CFB3953-A4C4-4946-9F76-213F302EDDE4}|ApiProject\\ApiProject.csproj|solutionrelative:apiproject\\models\\pharmdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderRequest.cs",
+              "DocumentMoniker": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\DTO\\OrderRequest.cs",
+              "RelativeDocumentMoniker": "ApiProject\\DTO\\OrderRequest.cs",
+              "ToolTip": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\DTO\\OrderRequest.cs",
+              "RelativeToolTip": "ApiProject\\DTO\\OrderRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:09:21.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderWithUser.cs",
+              "DocumentMoniker": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\DTO\\OrderWithUser.cs",
+              "RelativeDocumentMoniker": "ApiProject\\DTO\\OrderWithUser.cs",
+              "ToolTip": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\DTO\\OrderWithUser.cs",
+              "RelativeToolTip": "ApiProject\\DTO\\OrderWithUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:07:48.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ApiProject\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ApiProject\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T14:33:36.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "ApiProject\\Models\\Order.cs",
+              "ToolTip": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\Models\\Order.cs",
+              "RelativeToolTip": "ApiProject\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T02:17:10.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartsController.cs",
+              "DocumentMoniker": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\Controllers\\CartsController.cs",
+              "RelativeDocumentMoniker": "ApiProject\\Controllers\\CartsController.cs",
+              "ToolTip": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\Controllers\\CartsController.cs",
+              "RelativeToolTip": "ApiProject\\Controllers\\CartsController.cs",
+              "ViewState": "AQIAAM8BAAAAAAAAAAD4v94BAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T19:33:06.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "ApiProject\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "ApiProject\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAAAI8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T19:25:12.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "pharmDbcontext.cs",
+              "DocumentMoniker": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\Models\\pharmDbcontext.cs",
+              "RelativeDocumentMoniker": "ApiProject\\Models\\pharmDbcontext.cs",
+              "ToolTip": "D:\\Intensive Camp\\Final Project\\Pharmacy\\ApiProject\\ApiProject\\Models\\pharmDbcontext.cs",
+              "RelativeToolTip": "ApiProject\\Models\\pharmDbcontext.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwBgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T19:17:01.953Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

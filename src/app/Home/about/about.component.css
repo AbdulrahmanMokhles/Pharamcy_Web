@@ -1,0 +1,82 @@
+.site-blocks-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 700px;
+    color: #fff;
+}
+
+.site-blocks-cover .container {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.site-blocks-cover h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.site-blocks-cover p {
+    font-size: 1.2rem;
+    color: #fff;
+    white-space: pre-line;
+}
+
+.site-section {
+    padding: 4em 0;
+}
+
+.site-section-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.site-section-heading h2 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.site-section p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.block-16 {
+    position: relative;
+}
+
+.block-16 img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.block-16 .play-button,
+i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.block-16 .play-button .icon-play,
+i {
+    color: #51eaea;
+    font-size: 24px;
+}
+
+.custom-border-bottom {
+    border-bottom: 1px solid #ccc;
+}

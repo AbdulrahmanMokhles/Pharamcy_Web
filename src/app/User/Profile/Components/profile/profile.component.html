@@ -1,0 +1,68 @@
+<div class="container" style="direction: rtl;">
+
+    <!-- Profile Page -->
+    <section class="section profile-page">
+        <div class="container">
+            <div class="profile-info">
+                <div class="profile">
+                    <div class="profile-picture">
+                        <input type="file" id="avatarInput" accept="image/*" style="display: none;">
+                        <img src="assets/Images/user.jpg" alt="Profile Picture" id="avatarPreview">
+                    </div>
+                    <div class="profile-details">
+                        <h2 id="user-name" style="margin-right: 2rem;margin-top: 3rem;">{{userProfile.name}}</h2>
+                        <p id="user-email"></p>
+                    </div>
+                </div>
+                <div class="account-settings">
+                    <a routerLink="/edit" id="change-info" style="color: black;text-decoration: none;">تعديل الملف
+                        الشخصي</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra Info -->
+    <div class="row extra-info container">
+        <div class="section col-xs-12 col-sm-12 col-md-6">
+            <div class="section-edit">
+                <h2>معلومات المستخدم</h2>
+            </div>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="email">الأسم:</label>
+                    <input type="email" id="name" name="email" value="{{userProfile.name}}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="email">الأيميل:</label>
+                    <input type="email" id="email" name="email" value="{{userProfile.email}}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="phone">رقم التليفون:</label>
+                    <input type="tel" id="phone" name="phone" value="{{userProfile.phone}}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="currentPassword">كلمة المرور الحالية:</label>
+                    <input type="{{ showPassword ? 'text' : 'password' }}" readonly value="{{userProfile.password}}"
+                        required name="password">
+                    <span (click)="togglePasswordVisibility()"
+                        style="position: absolute; transform: translate(30px, 11px);">
+                        <i class="fa fa-eye" aria-hidden="false"></i>
+                    </span>
+
+                </div>
+                <div class="form-group">
+                    <label for="address">العنوان:</label>
+                    <input type="text" id="address" name="address" value="{{userProfile.address}}" readonly>
+                </div>
+            </form>
+        </div>
+        <div class="section col-xs-12 col-sm-12 col-md-6 ">
+            <h2>تاريخ الطلبات</h2>
+            <ul class="list-group" id="orders">
+                <li class="list-group-item" style="margin-top: 20px;">الطلب 1 <span>التاريخ: 2024-01-15</span></li>
+                <!-- <li class="list-group-item" style="margin-top: 50px;">Order 2 <span>Date: 2024-02-20</span></li> -->
+            </ul>
+        </div>
+    </div>
+</div>
